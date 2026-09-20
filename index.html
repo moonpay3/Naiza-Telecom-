@@ -1,99 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bn">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07111f">
-  <meta name="description" content="Naiza Telecom — Mobile Accessories, Smartphones, Chargers, Earbuds, Power Banks and Mobile Service.">
-  <title>Naiza Telecom | Your Trusted Mobile Shop</title>
-  <link rel="icon" href="assets/logo.png">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naiza Telecom - Trusted Mobile & Accessories Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a class="brand" href="#home"><img src="assets/logo.png" alt="Naiza Telecom logo"><span>NAIZA <b>TELECOM</b></span></a>
-      <nav>
-        <a href="#home">Home</a><a href="#products">Products</a><a href="#categories">Categories</a><a href="#about">About</a><a href="#contact">Contact</a>
-      </nav>
-      <button class="cart-btn" id="openCart" aria-label="Open cart">🛒 <span id="cartCount">0</span></button>
-    </div>
-  </header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-copy">
-          <span class="eyebrow">YOUR TRUSTED MOBILE SHOP</span>
-          <h1>সেরা পণ্য, সেরা দাম,<br><em>সেরা সার্ভিস</em></h1>
-          <p>New & Used Smartphones • Mobile Accessories • Charger • Earbuds • Power Bank • Mobile Service & Software</p>
-          <div class="hero-actions"><a class="btn primary" href="#products">Shop Now</a><a class="btn ghost" href="#contact">Contact Us</a></div>
-          <div class="trust-row"><span>✓ Original Products</span><span>✓ Best Price</span><span>✓ Fast Delivery</span></div>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-area">
+            <h1>Naiza <span>Telecom</span></h1>
         </div>
-        <img class="hero-image" src="assets/cover.png" alt="Naiza Telecom products">
-      </div>
+        <div class="cart-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Search Bar Section -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search smartphones, accessories, charger...">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2>সেরা ফোন, সেরা এক্সেসরিজ, সেরা দাম!</h2>
+            <p>New & Used Smartphones, Fast Chargers, Airpods, Power Banks & More.</p>
+            <a href="#products" class="shop-btn">Shop Now</a>
+        </div>
     </section>
 
-    <section class="features"><div class="container feature-grid">
-      <div>📱<b>Smartphones</b><small>New & Used</small></div>
-      <div>🎧<b>Accessories</b><small>Quality products</small></div>
-      <div>⚡<b>Fast Delivery</b><small>Across Bangladesh</small></div>
-      <div>🛠️<b>Mobile Service</b><small>Service & Software</small></div>
-    </div></section>
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Smartphone">
+                <div class="product-info">
+                    <h3>Latest Smartphone X</h3>
+                    <p class="price">৳ ৪৫,০০০</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
 
-    <section id="categories" class="section"><div class="container">
-      <div class="section-head"><div><span class="eyebrow">SHOP BY CATEGORY</span><h2>আপনার প্রয়োজনের পণ্য</h2></div></div>
-      <div class="cat-grid">
-        <button class="cat" data-category="Mobile Cover">📱<span>Mobile Cover</span></button>
-        <button class="cat" data-category="Charger & Cable">🔌<span>Charger & Cable</span></button>
-        <button class="cat" data-category="Earbuds">🎧<span>Earbuds</span></button>
-        <button class="cat" data-category="Power Bank">🔋<span>Power Bank</span></button>
-        <button class="cat" data-category="Screen Protector">🛡️<span>Screen Protector</span></button>
-        <button class="cat" data-category="Mobile Service">🛠️<span>Mobile Service</span></button>
-      </div>
-    </div></section>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=500&q=80" alt="Wireless Earbuds">
+                <div class="product-info">
+                    <h3>Pro Wireless Earbuds</h3>
+                    <p class="price">৳ ২,৫০০</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
 
-    <section id="products" class="section products-section"><div class="container">
-      <div class="section-head">
-        <div><span class="eyebrow">FEATURED PRODUCTS</span><h2>জনপ্রিয় পণ্য</h2></div>
-        <div class="controls"><input id="search" type="search" placeholder="পণ্য খুঁজুন…"><select id="filter"><option value="All">সব ক্যাটাগরি</option></select></div>
-      </div>
-      <div id="productGrid" class="product-grid"></div>
-    </div></section>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1609592424155-27f1c8430a66?auto=format&fit=crop&w=500&q=80" alt="Fast Charger">
+                <div class="product-info">
+                    <h3>65W Fast Charger Adapter</h3>
+                    <p class="price">৳ ১,৮০০</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
 
-    <section id="about" class="section about"><div class="container about-grid">
-      <div><span class="eyebrow">ABOUT US</span><h2>Naiza Telecom</h2>
-        <p>আপনার প্রিয় মোবাইল শপ—স্মার্টফোন, মোবাইল অ্যাক্সেসরিজ, চার্জার, ডাটা কেবল, ইয়ারবাড, পাওয়ার ব্যাংক এবং মোবাইল সার্ভিস ও সফটওয়্যার সেবা।</p>
-        <ul><li>Original & quality products</li><li>Competitive pricing</li><li>Customer support</li><li>Courier delivery across Bangladesh</li></ul>
-      </div>
-      <div class="about-card"><img src="assets/logo.png" alt="Naiza Telecom"><h3>Garadob Bazar, Gangni, Meherpur</h3><p>সারা বাংলাদেশে কুরিয়ার সুবিধা</p></div>
-    </div></section>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1585338107529-13afc5f02586?auto=format&fit=crop&w=500&q=80" alt="Power Bank">
+                <div class="product-info">
+                    <h3>20000mAh Power Bank</h3>
+                    <p class="price">৳ ৩,২০০</p>
+                    <button class="add-to-cart-btn">Add To Cart</button>
+                </div>
+            </div>
 
-    <section id="contact" class="section contact"><div class="container contact-card">
-      <div><span class="eyebrow">CONTACT</span><h2>অর্ডার বা তথ্যের জন্য যোগাযোগ করুন</h2><p>WhatsApp/Call নম্বরটি <code>script.js</code>-এ বসিয়ে দিন।</p></div>
-      <div class="contact-actions"><a class="btn primary" id="waLink" href="#" target="_blank" rel="noopener">WhatsApp</a><a class="btn ghost" href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook Page</a></div>
-    </div></section>
-  </main>
+        </div>
+    </section>
 
-  <footer><div class="container footer-inner"><div><strong>Naiza Telecom</strong><p>Your Trusted Mobile Shop</p></div><p>© <span id="year"></span> Naiza Telecom. All rights reserved.</p></div></footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Naiza Telecom. All Rights Reserved.</p>
+    </footer>
 
-  <div id="cartDrawer" class="drawer" aria-hidden="true"><div class="drawer-panel">
-    <div class="drawer-head"><h2>Your Cart</h2><button id="closeCart">✕</button></div>
-    <div id="cartItems"></div>
-    <div class="cart-total"><span>Total</span><strong id="cartTotal">৳0</strong></div>
-    <button id="checkoutBtn" class="btn primary full">Checkout / Order</button>
-  </div></div>
-
-  <div id="checkoutModal" class="modal" aria-hidden="true"><div class="modal-box">
-    <button class="modal-close" id="closeModal">✕</button><span class="eyebrow">CHECKOUT</span><h2>অর্ডার কনফার্ম করুন</h2>
-    <form id="checkoutForm">
-      <input required name="name" placeholder="আপনার নাম">
-      <input required name="phone" inputmode="tel" placeholder="মোবাইল নম্বর">
-      <textarea required name="address" placeholder="সম্পূর্ণ ডেলিভারি ঠিকানা"></textarea>
-      <select name="payment"><option>Cash on Delivery</option><option>WhatsApp confirmation</option></select>
-      <button class="btn primary full" type="submit">WhatsApp-এ অর্ডার পাঠান</button>
-    </form>
-  </div></div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
+
